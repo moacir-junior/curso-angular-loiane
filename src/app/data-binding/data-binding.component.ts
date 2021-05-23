@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'data-binding',
@@ -7,11 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
+  //property-binding
   url: string = 'programacaoeminhagameplay.com.br';
   urlImagem: string = 'http://lorempixel.com/400/200/nature/';
   infoTexto: string = '';
   infoTextoSalva: string = '';
   isMouseOver: boolean = false;
+
+  //two-way-data-binding
+  nome: string = 'abc';
+  pessoa: any = {
+    nome: '',
+    idade: 0,
+  }
 
   constructor() { }
 

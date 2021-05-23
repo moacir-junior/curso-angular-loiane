@@ -1,3 +1,10 @@
+.property-binding {
+    display: none;
+}
+
+.two-way-binding {
+}
+
 .highlight {
     background-color: yellow;
     font-weight: bold;

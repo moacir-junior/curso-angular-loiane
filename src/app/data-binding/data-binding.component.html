@@ -43,5 +43,19 @@
             <!--Podemos também usar on- antes do evento para fazer o event-binding. Exemplo: on-click-->
         </div>
     </article>
-
+</section>
+<section class="two-way-binding">
+    <article>
+        <h3>Two-way data binding</h3>
+        <div>
+            <input type="text" [(ngModel)]="nome">
+            <!--Podemos também usar bindon-ngModel para fazer o two-way data binding.-->
+            <p>Você digitou: {{ nome }}</p>
+        </div>
+        <div>
+            <input type="text" name="nome" [(ngModel)]="pessoa.nome">
+            <input type="text" name="idade" [(ngModel)]="pessoa.idade">
+            <p *ngIf="pessoa.nome && pessoa.idade">Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos</p>
+        </div>
+    </article>
 </section>
