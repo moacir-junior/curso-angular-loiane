@@ -22,6 +22,9 @@ export class DataBindingComponent implements OnInit {
     idade: 0,
   }
 
+  //input-property
+  nomeCurso: string = 'Angular';
+
   constructor() { }
 
   ngOnInit(): void {
