@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'data-binding';
+  title: string = 'data-binding';
+  valor: number = 5;
+  exibir: boolean = true;
+
+  incrementar(): void {
+    this.valor++;
+  }
+
+  deletar(): void {
+    this.exibir = false;
+  }
 }
